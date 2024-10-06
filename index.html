@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Discover articles on improving web accessibility and understanding ARIA roles. Learn valuable tips to enhance your site's accessibility.">
+    <meta name="description" content="Discover articles about the latest trends in art and culture">
 
     <link rel="stylesheet" href="style.css">
     <title>Trends in art and culture</title>
@@ -14,7 +13,7 @@
 <body>
     <!-- Header and navigation -->
     <header>
-        <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <nav class="nav" aria-label="Main Navigation">
             <a href="#" aria-label="Navigate to Home">Home</a>
             <a href="#" aria-label="Navigate to Articles">Articles</a>
             <a href="#" aria-label="Navigate to Contact Us">Contact Us</a>
@@ -27,8 +26,8 @@
     </section>
 
     <!-- Main article section -->
-    <main class="main article" role="main">
-        <img src="pottery.jpg" alt="A potter crafting pottery on a spinning wheel" />
+    <main class="main article">
+        <img src="pottery.jpg" alt="A potter crafting pottery on a spinning wheel" loading="lazy">
         <h2>The Revival of Traditional Crafts in a Digital World</h2>
         <p>As the world becomes more digital, there’s a surprising resurgence of interest in traditional crafts like
             pottery, weaving, and woodwork. This article explores how artisans are preserving these age-old techniques
@@ -43,8 +42,9 @@
     <!-- Related articles section -->
     <section class="related-articles-container">
 
+        <!--first article -->
         <article class="related-article">
-            <img src="streetart.jpg" alt="A colorful street art mural in a city setting">
+            <img src="streetart.jpg" alt="A colorful street art mural in a city setting" loading="lazy">
             <h3>The Renaissance of Public Art: Street Art's Role in Modern Culture</h3>
             <p>Street art is no longer just graffiti. This piece looks at how public murals and installations have
                 become
@@ -52,8 +52,10 @@
             <a href="#" aria-label="Read full article on The Renaissance of Public Art">Read full article</a>
         </article>
 
+
+        <!--second article -->
         <article class="related-article">
-            <img src="exhibition.jpg" alt="A visitor observing artwork in an exhibition">
+            <img src="exhibition.jpg" alt="A visitor observing artwork in an exhibition" loading="lazy">
             <h3>Inside the Minds of Curators: Crafting the Perfect Exhibition</h3>
             <p>Ever wondered how exhibitions are created? This article offers an inside look at the careful planning and
                 vision required to curate a successful art show, from selecting pieces to creating a narrative for
@@ -61,8 +63,10 @@
             <a href="#" aria-label="Read full article on Inside the Minds of Curators">Read full article</a>
         </article>
 
+
+        <!--third article -->
         <article class="related-article">
-            <img src="artfashion.jpg" alt="Models walking on a runway during a fashion show">
+            <img src="artfashion.jpg" alt="Models walking on a runway during a fashion show" loading="lazy">
             <h3>The Intersection of Fashion and Art: When Runways Become Galleries</h3>
             <p>Fashion is increasingly blurring the lines with fine art. Explore how designers are turning runways into
                 immersive art experiences, blending textiles and traditional artistic techniques to create wearable
@@ -70,8 +74,10 @@
             <a href="#" aria-label="Read full article on The Intersection of Fashion and Art">Read full article</a>
         </article>
 
+
+        <!--fourth article -->
         <article class="related-article">
-            <img src="indigenousart2.jpg" alt="A statue in Native American style">
+            <img src="indigenousart2.jpg" alt="A statue in Native American style" loading="lazy">
             <h3>Exploring Indigenous Art: A Journey Through Tradition and Innovation</h3>
             <p>Indigenous art reflects a deep connection to culture and history, but modern indigenous artists are also
                 pushing boundaries. This article takes readers on a journey through the rich, evolving world of
@@ -80,8 +86,10 @@
             <a href="#" aria-label="Read full article on Exploring Indigenous Art">Read full article</a>
         </article>
 
+
+        <!--fifth article -->
         <article class="related-article">
-            <img src="hautecouture.jpg" alt="A piece of contemporary art by indigenous artists">
+            <img src="hautecouture.jpg" alt="Haute couture dresses in a shopwindow" loading="lazy">
             <h3>Fashion as Art: How Haute Couture is Blurring Boundaries</h3>
             <p>When fashion becomes art, the runway transforms into a canvas. This article looks at how haute couture
                 designers are drawing inspiration from visual art, creating garments that are not just clothing, but
@@ -90,8 +98,10 @@
             <a href="#" aria-label="Read full article on Fashion as Art">Read full article</a>
         </article>
 
+
+        <!--sixth article -->
         <article class="related-article">
-            <img src="collaboratingart.jpg" alt="A statue made by indigenous artists">
+            <img src="collaboratingart.jpg" alt="Two people holding a paining" loading="lazy">
             <h3>The Rise of Art Collectives: Collaboration Over Competition</h3>
             <p>In an increasingly collaborative world, art collectives are gaining prominence. These groups of artists
                 are
@@ -100,8 +110,10 @@
             <a href="#" aria-label="Read full article on The Rise of Art Collectives">Read full article</a>
         </article>
 
+
+        <!--seventh article -->
         <article class="related-article">
-            <img src="festivalart.jpg" alt="A traditional festival featuring indigenous arts">
+            <img src="festivalart.jpg" alt="People attenting a festival" loading="lazy">
             <h3>Cultural Renaissance: How Local Festivals Are Reviving Heritage Arts</h3>
             <p>From traditional dances to regional crafts, local festivals are breathing new life into ancient cultural
                 practices. This piece highlights the role of festivals in preserving heritage while introducing
@@ -110,8 +122,10 @@
             <a href="#" aria-label="Read full article on Cultural Renaissance">Read full article</a>
         </article>
 
+
+        <!--eigth article -->
         <article class="related-article">
-            <img src="3dprint.jpg" alt="A modern sculpture using recycled materials">
+            <img src="3dprint.jpg" alt="A 3D-printer printing a vase" loading="lazy">
             <h3>The Evolution of Sculpture: From Marble to 3D Printing</h3>
             <p>Sculpture has been a cornerstone of artistic expression for centuries, but modern technology is
                 revolutionizing this ancient art form. This article explores how artists are incorporating new materials
@@ -122,8 +136,8 @@
 
     <!-- Footer-->
     <footer>
-        <form action="/subscribe" method="post" aria-labelledby="newsletter-description">
-            <label id="newsletter-description" for="email">Sign up for our newsletter:</label>
+        <form action="subscribe" method="post" aria-labelledby="newsletter-subscription">
+            <label id="newsletter-subscription" for="email">Sign up for our newsletter:</label>
             <input type="email" id="email" name="email" placeholder="Enter Email address" required aria-required="true"
                 aria-label="Email address">
             <button type="submit" aria-label="Submit your email to subscribe to the newsletter">Subscribe</button>

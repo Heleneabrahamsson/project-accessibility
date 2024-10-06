@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +12,7 @@ body {
     background-color: whitesmoke;
 }
 
-/* Navigation styles */
+/* navigation  */
 .nav {
     display: flex;
     justify-content: center;
@@ -27,13 +26,12 @@ body {
     font-size: 20px;
 }
 
-/* Hero section styles */
+/* hero section */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60vh;
-    /* Full height of the viewport */
     text-align: center;
 }
 
@@ -41,10 +39,9 @@ body {
     font-size: 3rem;
     line-height: 1.2;
     max-width: 80%;
-    /* To control text width */
 }
 
-/* Main article styles */
+/* main article section */
 .main.article {
     width: 80%;
     margin: 0 auto;
@@ -52,13 +49,11 @@ body {
     text-align: center;
     height: 700px;
     font-size: 18px;
-
-
 }
 
 .main.article img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     margin-bottom: 20px;
 }
 
@@ -74,7 +69,7 @@ body {
 }
 
 
-/* Related articles section styles */
+/* related articles section */
 .related-articles-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -88,9 +83,8 @@ body {
     text-align: center;
     font-size: 18px;
     padding: 20px;
-    border-radius: 2px, black;
-
-
+    border: 1px, solid black;
+    border-radius: 5px;
 }
 
 .related-article img {
@@ -99,14 +93,19 @@ body {
     margin-bottom: 10px;
 }
 
+.related-article h3 {
+    margin-bottom: 20px;
+}
+
 .related-article a {
     color: black;
     font-weight: bold;
-    padding-top: 20px;
+    display: block;
+    margin-top: 15px;
 
 }
 
-/* Footer styling */
+/* footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -115,7 +114,7 @@ footer {
     margin-top: 100px;
 }
 
-/*form styling */
+/*form  */
 
 input[type="email"] {
     padding: 10px;
@@ -135,22 +134,66 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-/* Responsive layout for tablets */
+/* Responsive design*/
+
+/* tablets */
 @media (min-width: 768px) {
     .related-articles-container {
         grid-template-columns: repeat(2, 1fr);
-        /* Two columns on tablet */
     }
 }
 
-/* Responsive layout for desktops */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1366px) {
     .related-articles-container {
-        grid-template-columns: repeat(4, 1fr);
-        /* Four columns on desktop */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav a {
+        font-size: 30px;
     }
 
     .hero h1 {
         font-size: 4rem;
+    }
+
+    body {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+/*desktops */
+@media (min-width: 1367px) {
+    .related-articles-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
+
+/* smartphones */
+@media (max-width: 320px) {
+    .nav a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .main.article {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .related-article {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 18px;
     }
 }
